@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio Design 2 - Aditi Kumari</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar" role="navigation" aria-label="Sidebar navigation">
+      <div class="sidebar-header">
+        <h1>Aditi Kumari</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <footer>
+        <p>© 2024 Aditi Kumari</p>
+      </footer>
+    </aside>
+
+    <main>
+      <section id="about" tabindex="0">
+        <h2>About Me</h2>
+        <p>
+          I’m a 2nd year Computer Science student focused on building sleek and efficient websites. I’m driven by creativity and love solving problems.Seeking to leverage strong technical skill, project experience, and a passion for innovation in a dynamic and challenging enivornment.
+        </p>
+      </section>
+
+      <section id="skills" tabindex="0">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript (ES6+)</li>
+          <li>C & C++</li>
+          <li>Git & GitHub</li>
+          <li>UI/UX Basics</li>
+        </ul>
+      </section>
+
+      <section id="projects" tabindex="0">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card" tabindex="0">
+            <h3>ADHD Detector</h3>
+            <p>An interactive platform for understanding and managing Attention Deficit Hyperactivity Disorder (ADHD).</p>
+            <a href="#" class="btn" role="button" aria-label="View ADHD Detector Project">View Project</a>
+          </article>
+          <article class="project-card" tabindex="0">
+            <h3>Recipe Finder</h3>
+            <p>Discover delicious recipes instantly with easy search and detailed instructions.</p>
+            <a href="#" class="btn" role="button" aria-label="View Recipe Finder Project">View Project</a>
+          </article>
+          <article class="project-card" tabindex="0">
+            <h3>To-Do List App</h3>
+            <p>A minimalist to-do list with persistent storage.</p>
+            <a href="#" class="btn" role="button" aria-label="View To-Do List Project">View Project</a>
+          </article>
+          <article class="project-card" tabindex="0">
+            <h3>Weather App</h3>
+            <p>Search weather info with clean UI and animations.</p>
+            <a href="#" class="btn" role="button" aria-label="View Weather App Project">View Project</a>
+          </article>
+          <article class="project-card" tabindex="0">
+            <h3>Nimbus Solutions</h3>
+            <p>Empowering your digital transformation with seamless, secure, and customizable tech solutions.</p>
+            <a href="#" class="btn" role="button" aria-label="View Nimbus Solutions Project">View Project</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" tabindex="0">
+        <h2>Contact Me</h2>
+        <form id="contact-form" aria-live="assertive" aria-describedby="form-feedback">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true" />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="name@example.com" required aria-required="true" />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required aria-required="true"></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p class="form-feedback" id="form-feedback" aria-live="polite"></p>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
